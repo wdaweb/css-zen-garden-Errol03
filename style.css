@@ -1,0 +1,641 @@
+@charset "utf-8";
+
+/* @import 'http://www.samkgo.com/training/edX/css-introduction/css/normalize_p.css'; */
+html {
+  box-sizing: border-box;
+  transition: 1s;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  transition: 1s;
+}
+
+/* basic elements */
+/* 
+臺灣雲豹,水獺,臺灣黑熊,臺灣狐蝠,臺灣水鹿,穿山甲,黑面琵鷺,綠蠵龜,台灣山椒魚,椰子蟹
+ */
+body {
+  font-family: "rucksack", sans-serif;
+  background-color: rgb(67, 88, 79);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  font-size: 3.5em;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  padding: 25px 10px 5px 10px;
+  margin: 0;
+  filter: drop-shadow(12px 12px 7px rgb(52, 53, 44));
+}
+
+h2 {
+  display: flex;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 100;
+  color: rgba(216, 143, 33, 0.767);
+}
+
+h3 {
+  font-size: 2.5em;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  line-height: 1em;
+  color: rgba(0, 0, 0, 0.7);
+  padding: 80px 40px 10px 40px;
+  margin: 5% auto 0% auto;
+  width: 70%;
+}
+
+p {
+  padding: 5px 60px 10px 40px;
+  margin: 0% auto;
+  width: 70%;
+  font-family: "Patrick Hand", cursive;
+  /* font-family: 'Source Sans Pro', sans-serif; */
+}
+
+@media (max-width: 48em) {
+  body {
+    background-repeat: repeat;
+    background-size: auto;
+  }
+  h3 {
+    margin: auto;
+    padding: 80px 15px 10px 15px;
+    width: 90%;
+  }
+  p {
+    margin: auto;
+    padding: 5px 15px 10px 15px;
+    width: 90%;
+  }
+}
+
+a:link {
+  color: #000;
+  font-size: 1.1em;
+  font-weight: 100;
+  text-decoration: none;
+}
+a:visited {
+  color: #000;
+  font-weight: 100;
+  text-decoration: none;
+}
+a:hover,
+a:focus,
+a:active {
+  text-decoration: underline;
+}
+abbr {
+  border-bottom: none;
+  text-decoration: none;
+}
+
+/* specific divs */
+
+.intro {
+  text-align: center;
+}
+
+/* 中央山脈 */
+header {
+  display: flex;
+  background-image: url(./images/header.png);
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(245, 197, 40);
+  font-size: 1.5rem;
+  padding: 0px 0px 170px 0px;
+  width: 100%;
+  height: 85%;
+  margin: auto;
+  justify-content: center;
+}
+/* header {
+  filter: drop-shadow(12px 12px 7px rgba(255, 255, 255, 0.692));
+} */
+header h1:after {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 0.5em;
+  line-height: 1.2em;
+  display: block;
+  font-weight: bold;
+  margin: auto;
+}
+
+.animate__animated:hover {
+  animation: infinite;
+  transition: 0s;
+}
+
+.summary {
+  width: 50%;
+  color: #fff;
+  margin: -150px auto 50px auto;
+  box-shadow: 0px 5px 25px 2px rgb(39, 122, 231);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 25px;
+}
+.summary p {
+  margin: 0 auto;
+  padding: 5px 10px 15px 10px;
+}
+/* download html css */
+.summary a {
+  color: rgb(138, 96, 41);
+  font-weight: bold;
+}
+@media (max-width: 1198px) {
+  header {
+    /* background-image: url(./images/歐亞水獺.jpg); */
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: auto;
+    padding: 10px 0px 170px 0px;
+    width: 100%;
+  }
+  .summary {
+    width: 95%;
+    margin: -200px auto 0px auto;
+  }
+}
+
+.preamble {
+  background-image: url(./images/黑熊02.jpg);
+  height: 100%;
+  min-height: 50vh;
+  /* 爆板專用 */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 100px;
+}
+/* 黑熊內文 */
+.preamble > * {
+  background-color: rgba(255, 255, 255, 0.4);
+  margin: 0px auto;
+  border-radius: 20px;
+  box-sizing: 50px 10px;
+}
+/* The Road to Enlightenment */
+.preamble h3 {
+  position: relative;
+  background: rgba(255, 255, 255, 0);
+  background-size: 23em;
+  padding: 50px;
+  top: 0px;
+  right: 300px;
+  font-size: 3.5rem;
+  color: rgb(255, 255, 255);
+}
+.preamble h3:hover {
+  filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.7));
+}
+.preamble p {
+  position: relative;
+  padding: 5px 170px 10px 170px;
+}
+@media (max-width: 1198px) {
+  .preamble p {
+    padding: 5px 50px 10px 40px;
+  }
+}
+@media (max-width: 48em) {
+  .preamble {
+    background-attachment: scroll;
+    background-size: auto;
+  }
+  .preamble p {
+    padding: 5px 15px 10px 15px;
+  }
+}
+/* So What is This About? */
+/* 穿山甲 */
+.explanation {
+  background-image: url(./images/穿山王.png);
+  background-attachment: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80%;
+  min-height: 50vh;
+  width: 50%;
+  margin-top: 70px;
+  margin: auto;
+  position: relative;
+  top: 40px;
+  right: 500px;
+  background-attachment: fixed;
+  border-radius: 50%;
+}
+/* .explanation > {
+  background-color: rgba(199, 185, 117, 0.6);
+  width: 25px;
+  height: 25px;
+} */
+/* what is about this */
+.explanation > h3 {
+  background: rgba(199, 185, 117, 0.6);
+  position: relative;
+  background: rgba(62, 148, 28, 0.2);
+  background-size: 23em;
+  padding: 80px;
+  left: 500px;
+  top: 120px;
+  font-size: 3rem;
+  color: rgba(219, 165, 94, 0.7);
+  width: 45%;
+  border: 2px solid #fff;
+}
+/* .explanation::before {
+  content: "";
+  position: relative;
+  left: 200px;
+  width: 5rem;
+  height: 200px;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+} */
+
+.explanation h3 :visited {
+  box-shadow: 0px 5px 25px 2px rgba(0, 0, 0, 0.8);
+}
+
+.explanation abbr {
+  background-color: rgba(206, 118, 78, 0.6);
+  box-sizing: border-box;
+  width: 15px;
+  height: 20px;
+  border-radius: 5px 24px 12px 9px;
+}
+
+/* There is a continuing  */
+
+#zen-explanation p {
+  position: relative;
+  bottom: 200px;
+  width: 50%;
+  margin: 1.2rem;
+  padding: 1rem;
+  float: right;
+  left: 700px;
+}
+.explanation h3:hover {
+  filter: drop-shadow(12px 12px 12px rgba(101, 199, 255, 0.945));
+}
+
+/* 放穿山甲iconX3
+在so what is this about */
+
+/* .explanation p {
+  background-image: url(./images/穿山甲icon.png) no-repeat;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  left: 200px;
+} */
+
+@media (max-width: 48em) {
+  .explanation {
+    background-attachment: scroll;
+    background-size: auto;
+    min-height: auto;
+    width: 100%;
+  }
+}
+
+.participation {
+  background-image: url(./images/梅花鹿.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  min-height: 50vh;
+  width: 100%;
+  margin-top: 70px;
+  box-shadow: inset 0 0 5rem #000000;
+}
+.participation > * {
+  position: relative;
+  width: 30%;
+  right: 750px;
+  top: 150px;
+  z-index: 1;
+  border-radius: 20px;
+}
+.participation h3 {
+  /* background: rgba(248, 233, 153, 0.9) url(http://www.samkgo.com/training/edX/css-introduction/images/bg_3-participation_h3.png) no-repeat bottom center; */
+  position: relative;
+  background: rgba(255, 255, 255, 0);
+  background-size: 23em;
+  padding: 70px;
+  top: 180px;
+  font-size: 5rem;
+  color: rgb(165, 51, 51);
+  margin: 10px;
+}
+.participation p {
+  background-color: rgba(153, 248, 174, 0.9);
+}
+/* .participation h3::after {
+  content: "";
+  color: #000;
+  position: relative;
+  left: 10px;
+  top: 20px;
+  font-size: 2rem;
+} */
+
+/* .participation h3:hover{
+   filter: hue-rotate(200deg);
+} */
+@media (max-width: 48em) {
+  .participation {
+    background-attachment: scroll;
+    background-size: auto;
+    min-height: auto;
+    width: 100%;
+  }
+}
+
+.benefits {
+  background-image: url(./images/雲豹2.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  min-height: 50vh;
+  width: 90%;
+  margin: auto;
+  position: relative;
+  top: 40px;
+}
+.benefits > * {
+  /* background-color: rgba(192, 138, 102, 0.9); */
+  backdrop-filter: blur(5px);
+  color: rgba(255, 208, 146, 0.822);
+  position: relative;
+  width: 30%;
+  height: 90%;
+  left: 650px;
+  top: 100px;
+}
+/* .benefits h3 {
+  background: rgba(192, 138, 102, 0.9) url() no-repeat bottom center;
+  position: relative;
+  top: 500px;
+} */
+@media (max-width: 48em) {
+  .benefits {
+    background-attachment: scroll;
+    background-size: auto;
+    min-height: auto;
+    width: 100%;
+  }
+}
+
+.requirements {
+  background-image: url(./images/台北油舌.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  min-height: 70vh;
+  width: 100%;
+  margin-top: 70px;
+}
+
+.requirements > * {
+  background-color: rgba(226, 140, 115, 0.4);
+  position: relative;
+  bottom: 0px;
+  padding: 1rem;
+}
+.requirements p {
+  position: relative;
+  bottom: 0px;
+}
+.requirements h3 {
+  position: relative;
+  background: rgba(255, 255, 255, 0);
+  background-size: 23em;
+  padding: 50px;
+  bottom: 100px;
+  right: 100px;
+  font-size: 5rem;
+  color: rgb(180, 120, 85);
+  top: 0px;
+}
+
+.requirements h3:hover {
+  filter: hue-rotate(360deg);
+}
+
+@media (max-width: 48em) {
+  .requirements {
+    background-attachment: scroll;
+    background-size: auto;
+    min-height: auto;
+    width: 100%;
+  }
+}
+
+.explanation h3,
+.benefits h3 {
+  float: left;
+  margin: 0% 15% 0% 15%;
+}
+.participation h3,
+.requirements h3 {
+  float: right;
+  margin: 0% 15% 0% 15%;
+}
+.explanation p,
+.benefits p {
+  float: left;
+  margin: 0% 15% 0% 15%;
+}
+.participation p,
+.requirements p {
+  float: right;
+  margin: 0% 15%;
+}
+.preamble :last-child,
+.explanation :last-child,
+.participation :last-child,
+.benefits :last-child,
+.requirements :last-child {
+  margin-bottom: 5%;
+  padding-bottom: 2%;
+}
+@media (max-width: 48em) {
+  .explanation h3,
+  .benefits h3,
+  .explanation p,
+  .benefits p {
+    margin: 0% 5%;
+  }
+  .participation h3,
+  .requirements h3,
+  .participation p,
+  .requirements p {
+    margin: 0% 5%;
+  }
+  .preamble :last-child,
+  .explanation :last-child,
+  .participation :last-child,
+  .benefits :last-child,
+  .requirements :last-child {
+    padding-bottom: 20px;
+  }
+}
+
+footer {
+  /* background-image: url(./images/歐亞水獺.jpg); */
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 70px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 30px;
+  box-shadow: 0px 5px 25px 2px rgba(0, 0, 0, 0.5);
+}
+footer > * {
+  font-family: "", sans-serif;
+  padding: 20px;
+  margin: 10px 70px;
+}
+footer a:link {
+  color: #fff;
+  font-size: 2em;
+  font-weight: 400;
+  text-decoration: none;
+}
+footer a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+footer a:hover,
+a:focus,
+a:active {
+  color: #000;
+  background-color: #fff;
+  border-radius: 40px;
+}
+footer p {
+  font-size: 0.8em;
+  text-align: center;
+  padding: 10px;
+  margin: 5px auto 20px auto;
+}
+@media (max-width: 1198px) {
+  footer > * {
+    padding: 10px;
+    margin: 35px;
+  }
+}
+@media (max-width: 48em) {
+  footer > * {
+    padding: 10px;
+    margin: 10px;
+  }
+}
+
+aside {
+  position: absolute;
+  top: 130px;
+  right: 0px;
+}
+aside h3 {
+  /* background-color: rgba(206, 59, 59, 0.7); */
+  background-image: url(./images/穿山甲icon.png);
+  font-size: 1.9em;
+  width: 50px;
+  margin: 10px;
+  padding: 10px;
+  z-index: 10;
+}
+aside h3:hover {
+  color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+aside ul {
+  position: relative;
+  background-color: rgba(255, 255, 255, 1);
+  margin: 9px 10px 10px 10px;
+  padding: 10px;
+  z-index: 20;
+}
+ul li {
+  list-style-type: none;
+  font-size: 0.9em;
+  margin: 5px 5px 5px 0px;
+}
+ul li .design-name {
+  font-size: 1.4em;
+  font-weight: 400;
+}
+
+/* design-selection */
+.design-selection,
+.design-archives,
+.zen-resources {
+  max-height: 20px;
+  overflow: hidden;
+}
+.design-selection:hover,
+.design-archives:hover,
+.zen-resources:hover,
+.design-selection:focus,
+.design-archives:focus,
+.zen-resources:focus,
+.design-selection:active,
+.design-archives:active,
+.zen-resources:active {
+  height: 50%;
+  overflow: visible;
+}
+.select {
+  background-image: url(./images/穿山甲icon.png);
+  width: 30px;
+  height: 30px;
+}
+
+@media (max-width: 1198px) {
+  aside {
+    position: static;
+  }
+  aside h3 {
+    color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(0, 0, 0, 0.7);
+    width: auto;
+  }
+  aside h3:hover {
+    cursor: none;
+  }
+  .design-selection,
+  .design-archives,
+  .zen-resources {
+    max-height: none;
+    overflow: visible;
+  }
+}
